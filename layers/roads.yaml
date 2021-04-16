@@ -95,7 +95,7 @@ layers:
                     width: [[13, 0.5px], [17, 3px], [18, 3.5m]]
 
         path:
-            filter: { class: path, not: { ramp: 1 } }
+            filter: { class: path }
             draw:
                 lines:
                     order: 25
@@ -106,7 +106,7 @@ layers:
             filter: { class: path, ramp: 1}
             draw:
                 step_dashes:
-                    order: 24
+                    order: 26
                     cap: butt
                     color: global.path_color
                     width: [[14, 0.5px], [15, 1px], [19, 1.5m]]
