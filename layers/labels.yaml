@@ -28,6 +28,7 @@ layers:
                 font:
                     family: global.text_font_family
                     fill: global.text_water_color
+                    style: italic
                     size: global.text_size
                     stroke: global.text_water_stroke
 
