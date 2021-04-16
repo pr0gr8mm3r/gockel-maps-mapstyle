@@ -71,7 +71,7 @@ layers:
                 join: round
                 cap: round
                 color: global.road_color
-                width: [[5, 1px], [12, 2px], [16, 5px], [17, 8m]]
+                width: [[5, 1px], [12, 1.5px], [16, 4px], [17, 6m]]
 
         major_road:
             filter: { class: [primary, secondary] }
