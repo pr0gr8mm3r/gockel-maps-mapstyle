@@ -149,7 +149,9 @@ layers:
             filter: { class: ferry }
             draw:
                 ferry-line:
-                        color: global.ferry_color
+                    order: 22
+                    color: global.ferry_color
+                    width: [[10, 0.2px], [12, 0.5px], [13, 1px], [18, 1.5m]]
                     
 
         bridges:
