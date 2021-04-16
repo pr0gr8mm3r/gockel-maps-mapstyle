@@ -144,6 +144,13 @@ layers:
                     angle: auto
                     text:
                         visible: false
+                        
+        ferry:
+            filter: { class: ferry }
+            draw:
+                ferry-line:
+                        color: global.ferry_color
+                    
 
         bridges:
             filter: { brunnel: bridge }
