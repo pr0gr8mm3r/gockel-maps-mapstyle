@@ -57,9 +57,10 @@ layers:
                 color: global.building_color
                 extrude: function() { return feature.render_height; }
             buildings-outline-style:
-                order: 101
+                order: 99
                 color: global.building_outline_color
                 width: [[16, 1px], [18,2px], [19,4px]]
+                extrude: 0
 
     landcover:
         data: { source: openmaptiles }
