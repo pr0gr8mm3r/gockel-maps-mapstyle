@@ -140,10 +140,10 @@ layers:
                 lines:
                     color: global.square_outline_color
                     width: function () { return 1/4 * Math.log($zoom); }
-                    order: 25
+                    order: 20
                 polygons:
                     color: global.square_color
-                    order: 21
+                    order: 25
 
 
 styles:
