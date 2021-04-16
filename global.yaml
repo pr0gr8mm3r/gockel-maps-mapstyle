@@ -33,6 +33,7 @@ global:
     path_outline_color: '#ca9'
     square_color: global.road_color
     square_outline_color: global.path_outline_color
+    ferry_color: '#C6E7F5'
 
     earth_color: '#f3eacc'
     water_color: '#68d'
