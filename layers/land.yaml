@@ -168,7 +168,7 @@ styles:
                 u_color: [1.,1.,1.0,0.4]
             blocks:
                 color: |
-                    float x = (v_texcoord.x - 0.495);
+                    float x = (v_texcoord.x - 0.495) * 0.75;
                     if(x > 0.0) {
                         float opacity = 1.-x;
                         float waves = fract(u_waves*(1.-x)-u_time*u_speed);
