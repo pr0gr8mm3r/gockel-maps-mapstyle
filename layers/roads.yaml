@@ -113,7 +113,7 @@ layers:
                     width: [ [ 14, 0px ], [ 16, 1.5px ], [ 19, 1.75m ] ]
 
         road-outline:
-            filter: { not: { class: [ path, footway ] }, $zoom: { min: 15 } }
+            filter: { not: { class: [ path, footway, ferry ] }, $zoom: { min: 15 } }
             draw:
                 lines:
                     outline:
@@ -149,7 +149,7 @@ layers:
         ferry:
             filter: { class: ferry }
             draw:
-                ferry-line:
+                lines:
                     order: 22
                     color: global.ferry_color
                     width: [ [ 10, 0.2px ], [ 12, 0.5px ], [ 13, 1px ], [ 18, 1.5m ] ]
