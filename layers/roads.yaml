@@ -92,7 +92,7 @@ layers:
             draw:
                 lines:
                     order: 27
-                    width: [[13, 0.5px], [17, 3px], [18, 3.5m]]
+                    width: [[13, 0px], [15, 1px], [17, 3px], [18, 3.5m]]
 
         path:
             filter: { class: path }
@@ -100,7 +100,7 @@ layers:
                 lines:
                     order: 24
                     color: global.path_color
-                    width: [[14, 0px], [16, 1px], [19, 1.5m]]
+                    width: [[14, 0px], [16, 1.5px], [19, 1.75m]]
 
         steps:
             filter: { class: path, ramp: 1}
@@ -109,7 +109,7 @@ layers:
                     order: 25
                     cap: butt
                     color: global.path_color
-                    width: [[14, 0px], [16, 1px], [19, 1.5m]]
+                    width: [[14, 0px], [16, 1.5px], [19, 1.75m]]
 
         road-outline:
             filter: { not: { class: path }, $zoom: { min: 15 } }
