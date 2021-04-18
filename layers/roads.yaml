@@ -43,7 +43,7 @@ layers:
                     outline:
                         cap: butt
                         order: 45
-        tunnel:
+       tunnel:
             filter: { brunnel: tunnel }
             draw:
                 lines-highway-style:
@@ -96,7 +96,7 @@ layers:
                     width: [[14, 0px], [15.5, 1px], [17, 3px], [18, 3.5m]]
 
         path:
-            filter: { class: path }
+            filter: { class: [path, footway] }
             draw:
                 lines:
                     order: 24
@@ -122,7 +122,7 @@ layers:
                         order: 23
 
         path-outline:
-            filter: { $zoom: { min: 17 }, class: path }
+            filter: { $zoom: { min: 17 }, class: [path, footway] }
             draw:
                 lines:
                     outline:
