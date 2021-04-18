@@ -67,6 +67,13 @@ layers:
             draw:
                 polygons:
                     color: global.green_color
+            orchard:
+                filter:
+                    subclass:
+                        - orchard
+                draw:
+                    polygons:
+                        color: global.orchard_color
         trees:
             filter:
                 class:
