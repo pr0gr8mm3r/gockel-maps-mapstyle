@@ -112,6 +112,14 @@ layers:
                     color: global.path_color
                     width: [ [ 14, 0px ], [ 16, 1.5px ], [ 19, 1.75m ] ]
 
+        ferry:
+            filter: { class: ferry }
+            draw:
+                ferry_dashes:
+                    order: 22
+                    color: global.ferry_color
+                    width: [ [ 10, 0.2px ], [ 12, 0.5px ], [ 13, 1px ], [ 18, 1.5m ] ]
+
         road-outline:
             filter: { not: { class: [ path, footway, ferry ] }, $zoom: { min: 15 } }
             draw:
@@ -145,14 +153,6 @@ layers:
                     angle: auto
                     text:
                         visible: false
-
-        ferry:
-            filter: { class: ferry }
-            draw:
-                lines:
-                    order: 22
-                    color: global.ferry_color
-                    width: [ [ 10, 0.2px ], [ 12, 0.5px ], [ 13, 1px ], [ 18, 1.5m ] ]
 
 
         bridges:
@@ -205,6 +205,10 @@ styles:
         base: lines
         dash: [ 0.6,0.4 ]
         dash_background_color: global.path_outline_color
+    ferry_dashes:
+        base: lines
+        dash: [ 0.6,0.4 ]
+        dash_background_color: global.water_color
     lines-highway-style:
         base: lines
         blend: opaque
