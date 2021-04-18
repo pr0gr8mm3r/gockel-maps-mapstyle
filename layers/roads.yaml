@@ -207,7 +207,7 @@ styles:
         dash_background_color: global.path_outline_color
     ferry_dashes:
         base: lines
-        dash: [ 1.0,0.5 ]
+        dash: [ 0.4,0.6 ]
         dash_background_color: global.water_color
     lines-highway-style:
         base: lines
