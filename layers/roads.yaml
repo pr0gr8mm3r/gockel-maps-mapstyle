@@ -43,7 +43,6 @@ layers:
                     outline:
                         cap: butt
                         order: 45
-
         tunnel:
             filter: { brunnel: tunnel }
             draw:
