@@ -71,7 +71,7 @@ async function styles() {
 
     const provider = view.provider;
     const style = SETTINGS.style;
-    const url = `https://cdn.jsdelivr.net/gh/ENT8R/streetcomplete-mapstyle@${provider}/streetcomplete-${style}-style.yaml`;
+    const url = `https://raw.githubusercontent.com/pr0gr8mm3r/streetcomplete-mapstyle/${provider}/streetcomplete-${style}-style.yaml`;
     const content = await fetch(url).then(response => response.text());
     editor.getDoc().setValue(content);
     editor.getDoc().clearHistory();
