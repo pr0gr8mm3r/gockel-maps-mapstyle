@@ -59,6 +59,7 @@ layers:
         draw:
             polygons:
                 order: 1
+                alpha: [[17, 1], [18, 0.9], [19, 0.8], [20, 0.7], [21, 0.6]]
         green:
             filter:
                 class:
