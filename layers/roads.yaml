@@ -77,15 +77,16 @@ layers:
             filter: { class: [primary, secondary] }
             draw:
                 lines:
+                    color: global.road_major_color
                     order: 29
-                    width: [[9, 1px], [14, 2px], [16, 6px], [19, 11m]]
+                    width: [[9, 1px], [14, 2px], [16, 6px], [19, 11m], [21, 7m]]
 
         minor_road:
             filter: { class: [tertiary, minor] }
             draw:
                 lines:
                     order: 28
-                    width: [[12, 0px], [13, 0.75px], [14, 1.2px], [15, 2.5px], [16, 7m]]
+                    width: [[12, 0px], [13, 0.75px], [14, 1.2px], [15, 2.5px], [16, 7m], [19, 7m], [21, 5m]]
 
         service_road:
             filter: { class: [service, track] }
