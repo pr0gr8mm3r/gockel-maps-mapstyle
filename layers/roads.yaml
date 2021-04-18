@@ -113,7 +113,7 @@ layers:
                     width: [ [ 14, 0px ], [ 16, 1.5px ], [ 19, 1.75m ] ]
 
         road-outline:
-            filter: { not: { class: path }, $zoom: { min: 15 } }
+            filter: { not: { class: [ path, footway ] }, $zoom: { min: 15 } }
             draw:
                 lines:
                     outline:
