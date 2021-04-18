@@ -162,6 +162,11 @@ layers:
                     outline:
                         cap: butt
                         order: 41
+            polygon:
+                filter: { class: bridge }
+                draw:
+                    polygons:
+                        color: global.road_outline_color
 
         tunnel:
             filter: { brunnel: tunnel }
