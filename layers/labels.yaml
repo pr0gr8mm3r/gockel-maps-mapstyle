@@ -18,7 +18,7 @@ layers:
                     weight: normal
 
     water-labels:
-        data: { source: openmaptiles, layer: [water_name, waterway] }
+        data: { source: openmaptiles, layer: [ water_name, waterway ] }
         filter: { not: { brunnel: tunnel } }
         draw:
             text:
@@ -50,7 +50,7 @@ layers:
 
     place-labels:
         data: { source: openmaptiles, layer: place }
-        filter: { not: { class: [continent, country] }}
+        filter: { not: { class: [ continent, country ] } }
         draw:
             text:
                 text_source: global.name_source

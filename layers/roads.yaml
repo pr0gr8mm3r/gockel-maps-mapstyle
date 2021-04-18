@@ -1,18 +1,18 @@
 layers:
     railway:
         data: { source: openmaptiles, layer: transportation }
-        filter: { class: [rail, transit, cablecar], not: { brunnel: tunnel }}
+        filter: { class: [ rail, transit, cablecar ], not: { brunnel: tunnel } }
         draw:
             lines-railway-style:
                 order: 32
                 color: global.railway_color
                 join: round
-                width: [[10, 0.5px], [12, 1.0px], [13, 2px], [18, 3m]]
+                width: [ [ 10, 0.5px ], [ 12, 1.0px ], [ 13, 2px ], [ 18, 3m ] ]
         service:
             filter: { service: true }
             draw:
                 lines-railway-style:
-                    width: [[10, 0.2px], [12, 0.5px], [13, 1px], [18, 1.5m]]
+                    width: [ [ 10, 0.2px ], [ 12, 0.5px ], [ 13, 1px ], [ 18, 1.5m ] ]
         bridges:
             filter: { brunnel: bridge }
             draw:
@@ -22,14 +22,14 @@ layers:
 
     highway:
         data: { source: openmaptiles, layer: transportation }
-        filter: { class: [motorway, trunk], ramp: 0 }
+        filter: { class: [ motorway, trunk ], ramp: 0 }
         draw:
             lines-highway-style:
                 order: 34
                 join: round
                 cap: round
                 color: global.highway_color
-                width: [[8, 1px], [14, 5px], [15, 20m]]
+                width: [ [ 8, 1px ], [ 14, 5px ], [ 15, 20m ] ]
                 outline:
                     color: global.highway_outline_color
                     width: function () { return 1/4 * Math.log($zoom); }
@@ -44,7 +44,7 @@ layers:
                         cap: butt
                         order: 45
 
-       tunnel:
+        tunnel:
             filter: { brunnel: tunnel }
             draw:
                 lines-highway-style:
@@ -54,7 +54,7 @@ layers:
 
     aeroways:
         data: { source: openmaptiles, layer: aeroway }
-        filter: { class: [runway, taxiway] }
+        filter: { class: [ runway, taxiway ] }
         draw:
             lines:
                 order: 30
@@ -65,53 +65,53 @@ layers:
 
     roads:
         data: { source: openmaptiles, layer: transportation }
-        filter: { [ class: [primary, secondary, tertiary, minor, service, track, path], { class: [motorway, trunk], ramp: 1 } ], not: { indoor: 1 } }
+        filter: { [ class: [ primary, secondary, tertiary, minor, service, track, path ], { class: [ motorway, trunk ], ramp: 1 } ], not: { indoor: 1 } }
         draw:
             lines:
                 order: 26
                 join: round
                 cap: round
                 color: global.road_color
-                width: [[5, 1px], [12, 1.5px], [16, 4px], [17, 6m]]
+                width: [ [ 5, 1px ], [ 12, 1.5px ], [ 16, 4px ], [ 17, 6m ] ]
 
         major_road:
-            filter: { class: [primary, secondary] }
+            filter: { class: [ primary, secondary ] }
             draw:
                 lines:
                     color: global.road_major_color
                     order: 29
-                    width: [[9, 1px], [14, 2px], [16, 6px], [19, 11m], [21, 7m]]
+                    width: [ [ 9, 1px ], [ 14, 2px ], [ 16, 6px ], [ 19, 11m ], [ 21, 7m ] ]
 
         minor_road:
-            filter: { class: [tertiary, minor] }
+            filter: { class: [ tertiary, minor ] }
             draw:
                 lines:
                     order: 28
-                    width: [[12, 0px], [13, 0.75px], [14, 1.2px], [15, 2.5px], [16, 7m], [19, 7m], [21, 5m]]
+                    width: [ [ 12, 0px ], [ 13, 0.75px ], [ 14, 1.2px ], [ 15, 2.5px ], [ 16, 7m ], [ 19, 7m ], [ 21, 5m ] ]
 
         service_road:
-            filter: { class: [service, track] }
+            filter: { class: [ service, track ] }
             draw:
                 lines:
                     order: 27
-                    width: [[14, 0px], [15.5, 1px], [17, 3px], [18, 3.5m]]
+                    width: [ [ 14, 0px ], [ 15.5, 1px ], [ 17, 3px ], [ 18, 3.5m ] ]
 
         path:
-            filter: { class: [path, footway] }
+            filter: { class: [ path, footway ] }
             draw:
                 lines:
                     order: 24
                     color: global.path_color
-                    width: [[14, 0px], [16, 1.5px], [19, 1.75m]]
+                    width: [ [ 14, 0px ], [ 16, 1.5px ], [ 19, 1.75m ] ]
 
         steps:
-            filter: { class: path, ramp: 1}
+            filter: { class: path, ramp: 1 }
             draw:
                 step_dashes:
                     order: 25
                     cap: butt
                     color: global.path_color
-                    width: [[14, 0px], [16, 1.5px], [19, 1.75m]]
+                    width: [ [ 14, 0px ], [ 16, 1.5px ], [ 19, 1.75m ] ]
 
         road-outline:
             filter: { not: { class: path }, $zoom: { min: 15 } }
@@ -123,7 +123,7 @@ layers:
                         order: 23
 
         path-outline:
-            filter: { $zoom: { min: 17 }, class: [path, footway] }
+            filter: { $zoom: { min: 17 }, class: [ path, footway ] }
             draw:
                 lines:
                     outline:
@@ -140,21 +140,21 @@ layers:
                     flat: true
                     buffer: 2px
                     color: global.oneway_arrow_color
-                    size: [[17, [4px, auto]], [20, [12px, auto]]]
+                    size: [ [ 17, [ 4px, auto ] ], [ 20, [ 12px, auto ] ] ]
                     placement: spaced
-                    placement_spacing: [[17, 64px], [20, 256px]]
+                    placement_spacing: [ [ 17, 64px ], [ 20, 256px ] ]
                     angle: auto
                     text:
                         visible: false
-                        
+
         ferry:
             filter: { class: ferry }
             draw:
                 ferry-line:
                     order: 22
                     color: global.ferry_color
-                    width: [[10, 0.2px], [12, 0.5px], [13, 1px], [18, 1.5m]]
-                    
+                    width: [ [ 10, 0.2px ], [ 12, 0.5px ], [ 13, 1px ], [ 18, 1.5m ] ]
+
 
         bridges:
             filter: { brunnel: bridge }
@@ -184,27 +184,27 @@ layers:
     pois:
         data: { source: openmaptiles , layer: poi }
         barrier:
-            filter: { subclass: [gate, bollard, lift_gate, cycle_barrier, stile, block, toll_booth, kissing_gate, swing_gate, chain, cattle_grid, border_control], $zoom: { min: 17 }}
+            filter: { subclass: [ gate, bollard, lift_gate, cycle_barrier, stile, block, toll_booth, kissing_gate, swing_gate, chain, cattle_grid, border_control ], $zoom: { min: 17 } }
             draw:
                 points:
                     buffer: 2px
                     flat: true
                     color: global.barrier_color
-                    size: [[17, 2px], [20, 16px]]
+                    size: [ [ 17, 2px ], [ 20, 16px ] ]
         roundabout:
             # openmaptiles: these properties do not exist
-            filter: { subclass: [mini_roundabout, turning_loop, turning_circle] }
+            filter: { subclass: [ mini_roundabout, turning_loop, turning_circle ] }
             draw:
                 points:
                     buffer: 2px
                     flat: true
                     color: global.roundabout_color
-                    size: [[16, 2px], [20, 24px]]
+                    size: [ [ 16, 2px ], [ 20, 24px ] ]
 
 styles:
     step_dashes:
         base: lines
-        dash: [0.6,0.4]
+        dash: [ 0.6,0.4 ]
         dash_background_color: global.path_outline_color
     lines-highway-style:
         base: lines
@@ -214,7 +214,7 @@ styles:
         blend: opaque
     private-way:
         base: lines
-        dash: [1.0,0.5]
+        dash: [ 1.0,0.5 ]
         blend: translucent
     oneway-arrow:
         base: points
