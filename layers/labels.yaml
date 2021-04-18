@@ -10,6 +10,11 @@ layers:
                 text_wrap: 25
                 max_lines: 3
                 priority: 20
+                transition:
+                    show:
+                        time: .2s
+                    hide:
+                        time: 0.2s
                 font:
                     family: global.text_font_family
                     fill: global.text_fill_color
@@ -25,6 +30,11 @@ layers:
                 text_source: global.name_source
                 buffer: 12px
                 priority: function() { return feature.rank }
+                transition:
+                    show:
+                        time: .2s
+                    hide:
+                        time: 0.2s
                 font:
                     family: global.text_font_family
                     fill: global.text_water_color
@@ -40,6 +50,11 @@ layers:
                 text_source: global.name_source
                 buffer: 12px
                 priority: function() { return feature.rank }
+                transition:
+                    show:
+                        time: .2s
+                    hide:
+                        time: 0.2s
                 font:
                     family: global.text_font_family
                     fill: global.text_fill_color
@@ -56,6 +71,11 @@ layers:
                 text_source: global.name_source
                 buffer: 4px
                 priority: function() { return 6 + feature.rank }
+                transition:
+                    show:
+                        time: .2s
+                    hide:
+                        time: 0.2s
                 font:
                     family: global.text_font_family
                     fill: global.text_fill_color
