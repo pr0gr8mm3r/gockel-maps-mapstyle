@@ -81,11 +81,11 @@ layers:
                     width: [[9, 1px], [14, 2px], [16, 6px], [19, 11m]]
 
         minor_road:
-            filter: { $zoom: { min: 15 }, class: [tertiary, minor] }
+            filter: { class: [tertiary, minor] }
             draw:
                 lines:
                     order: 28
-                    width: [[11, 0.5px], [12, 0.75px], [13, 1.0px], [14, 1.2px], [15, 2.5px], [16, 7m]]
+                    width: [[12, 0px], [13, 0.75px], [14, 1.2px], [15, 2.5px], [16, 7m]]
 
         service_road:
             filter: { class: [service, track] }
