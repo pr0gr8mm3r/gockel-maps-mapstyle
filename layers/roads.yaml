@@ -92,7 +92,7 @@ layers:
             draw:
                 lines:
                     order: 27
-                    width: [[14, 0px], [16, 1px], [17, 3px], [18, 3.5m]]
+                    width: [[14, 0px], [15.5, 1px], [17, 3px], [18, 3.5m]]
 
         path:
             filter: { class: path }
