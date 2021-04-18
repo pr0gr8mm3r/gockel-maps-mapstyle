@@ -167,6 +167,7 @@ layers:
                 draw:
                     polygons:
                         color: global.road_outline_color
+                        order: 25
 
         tunnel:
             filter: { brunnel: tunnel }
