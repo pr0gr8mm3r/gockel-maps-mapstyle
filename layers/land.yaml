@@ -59,7 +59,6 @@ layers:
         draw:
             polygons:
                 order: 1
-                alpha: function() { return 0.25 * (17 - $zoom); }
         green:
             filter:
                 class:
