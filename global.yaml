@@ -142,7 +142,7 @@ sources:
         url: https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf
         max_zoom: 14
         url_params:
-            api_key: global.api_key
+            key: global.api_key
 
 textures:
     oneway-arrow:
