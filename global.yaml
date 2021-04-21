@@ -139,7 +139,7 @@ lights:
 sources:
     openmaptiles:
         type: MVT
-        url: https://tiles.stadiamaps.com/data/openmaptiles/{z}/{x}/{y}.pbf
+        url: https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf
         max_zoom: 14
         url_params:
             api_key: global.api_key
@@ -147,6 +147,6 @@ sources:
 textures:
     oneway-arrow:
         # url: images/oneway_arrow@2x.png
-        url: https://raw.githubusercontent.com/ENT8R/streetcomplete-mapstyle/openmaptiles/images/oneway_arrow@2x.png
+        url: https://raw.githubusercontent.com/pr0gr8mm3r/gockel-maps-mapstyle/openmaptiles/images/oneway_arrow@2x.png
         filtering: mipmap
         density: 5
