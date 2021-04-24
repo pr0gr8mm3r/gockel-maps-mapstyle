@@ -132,7 +132,7 @@ camera:
 lights:
     cameralight:
         type: point
-        diffuse: 0.5
+        diffuse: 0.3
         origin: camera
         ambient: 0.7
 
