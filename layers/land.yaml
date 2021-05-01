@@ -51,7 +51,7 @@ layers:
             buildings-outline-style:
                 order: 101
                 color: global.building_outline_color
-                width: [ [ 16, 1px ], [ 18, 2px ], [ 19, 3px ] ]
+                width: [ [ 16, 1px ], [ 18, 1.5px ] ]
                 extrude: function() { return feature.render_height; }
 
     landcover:
