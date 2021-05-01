@@ -42,7 +42,7 @@ layers:
 
     buildings:
         data: { source: openmaptiles, layer: building }
-        filter: { $zoom: { min: 16 }, hide_3d: false }
+        filter: { $zoom: { min: 15 }, hide_3d: false }
         draw:
             buildings-style:
                 order: 100
