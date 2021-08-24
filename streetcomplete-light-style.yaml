@@ -30,7 +30,7 @@ global:
 
     earth_color: [0.980, 0.980, 0.985, 1.00]
     water_color: [0.588, 0.749, 0.988, 1.00]
-    water_tunnel_color: [0.475, 0.663, 0.941, 1.00]
+    water_tunnel_color: [0.588, 0.749, 0.988, 0.70]
     green_color: [0.686, 0.902, 0.682, 1.00]
     orchard_color: [0.612, 0.875, 0.663, 1.00]
     meadow_color: [0.694, 0.910, 0.671, 1.00]
@@ -51,6 +51,9 @@ styles:
     lines-highway-style:
         base: lines
         blend: opaque
+    lines-water-tunnel-style:
+        base: lines
+        blend: multiply
     lines-railway-style:
         base: lines
         blend: add
