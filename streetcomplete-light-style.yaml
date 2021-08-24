@@ -53,7 +53,7 @@ styles:
         blend: opaque
     lines-water-tunnel-style:
         base: lines
-        blend: multiply
+        blend: overlay
     lines-railway-style:
         base: lines
         blend: add
