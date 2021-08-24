@@ -21,7 +21,7 @@ layers:
         data: { source: openmaptiles , layer: waterway }
         filter: { not: { brunnel: tunnel } }
         draw:
-            lines:
+            lines-water-tunnel-style:
                 color: global.water_color
                 order: 3
                 join: round
